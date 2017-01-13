@@ -2,7 +2,7 @@
   "fileIdent": "EXAM",
   "fileExt": "example",
   "rootTable": {
-    "name": "Example",
+    "name": "Test.Example",
     "isStruct": false,
     "minalign": 1,
     "bytesize": 0,
@@ -583,21 +583,21 @@
   },
   "objects": [
     {
-      "name": "A",
+      "name": "Test.A",
       "isStruct": false,
       "minalign": 1,
       "bytesize": 0,
       "fields": []
     },
     {
-      "name": "B",
+      "name": "Test.B",
       "isStruct": false,
       "minalign": 1,
       "bytesize": 0,
       "fields": []
     },
     {
-      "name": "Example",
+      "name": "Test.Example",
       "isStruct": false,
       "minalign": 1,
       "bytesize": 0,
@@ -1177,7 +1177,7 @@
       ]
     },
     {
-      "name": "Nested",
+      "name": "Test.Nested",
       "isStruct": true,
       "minalign": 4,
       "bytesize": 8,
@@ -1213,7 +1213,7 @@
       ]
     },
     {
-      "name": "Struct",
+      "name": "Test.Struct",
       "isStruct": true,
       "minalign": 8,
       "bytesize": 40,
@@ -1335,7 +1335,7 @@
   ],
   "enums": [
     {
-      "name": "Enum",
+      "name": "Test.Enum",
       "is_union": false,
       "underlying_type": {
         "baseType": "UByte",
@@ -1356,7 +1356,7 @@
       ]
     },
     {
-      "name": "Union",
+      "name": "Test.Union",
       "is_union": true,
       "underlying_type": {
         "baseType": "UType",
@@ -1373,7 +1373,7 @@
           "name": "A",
           "value": 1,
           "object": {
-            "name": "A",
+            "name": "Test.A",
             "isStruct": false,
             "minalign": 1,
             "bytesize": 0,
@@ -1384,7 +1384,7 @@
           "name": "B",
           "value": 2,
           "object": {
-            "name": "B",
+            "name": "Test.B",
             "isStruct": false,
             "minalign": 1,
             "bytesize": 0,
