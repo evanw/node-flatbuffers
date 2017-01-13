@@ -212,7 +212,7 @@ exports.parseSchema = function(bytes) {
 };
 
 function compileEnumGenerator(schema, context, enumDef) {
-  var key = 'enumMap' + enumDef.name.replace('.','_');
+  var key = 'enumMap' + enumDef.name.replace(/\./g,'_');
   var code = '';
 
   if (key in context) {
@@ -232,7 +232,7 @@ function compileEnumGenerator(schema, context, enumDef) {
 }
 
 function compileObjectGenerator(schema, context, object) {
-  var key = 'generate' + object.name.replace('.','_');
+  var key = 'generate' + object.name.replace(/\./g,'_');
   var code = '';
 
   if (key in context) {
@@ -471,7 +471,7 @@ function compileObjectGenerator(schema, context, object) {
 }
 
 function compileEnumParser(schema, context, enumDef) {
-  var key = 'enumArray' + enumDef.name.replace('.','_');
+  var key = 'enumArray' + enumDef.name.replace(/\./g,'_');
   var code = '';
 
   if (key in context) {
@@ -491,7 +491,7 @@ function compileEnumParser(schema, context, enumDef) {
 }
 
 function compileObjectParser(schema, context, object) {
-  var key = 'parse' + object.name.replace('.','_');
+  var key = 'parse' + object.name.replace(/\./g,'_');
   var code = '';
 
   if (key in context) {
